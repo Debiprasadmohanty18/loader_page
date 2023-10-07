@@ -1,0 +1,25 @@
+div {
+    height:200px;
+    width:200px;
+    border: 10px solid rgb(0, 255, 38);
+    border-top: 10px solid blue;
+    /* border-right: 10px dashed rgb(255, 55, 0);
+    border-bottom: 10px dotted rgb(0, 255, 30);
+    border-left: 10px double rgb(225, 255, 0); */
+    border-radius: 50%;
+    animation-name: spin;
+    margin:240px 0 0 600px;
+    animation:spin 1s ease-in 0.5ms infinite normal;
+}
+h1 {
+    font-size: 70px;
+    text-align: center;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
